@@ -19,7 +19,7 @@ TypeofContact           = st.selectbox("Type of Contact", ["Self Enquiry", "Comp
 CityTier                = st.selectbox("City Tier", [1, 2, 3])
 DurationOfPitch         = st.slider("Duration of Pitch (mins)", 0, 100, 15)
 Occupation              = st.selectbox("Occupation", ["Salaried", "Small Business", "Large Business", "Free Lancer"])
-Gender                  = st.selectbox("Gender", ["Male", "Female", "Others"])
+Gender                  = st.selectbox("Gender", ["Male", "Female"])
 NumberOfPersonVisiting  = st.slider("Number of Persons Visiting", 1, 5, 2)
 NumberOfFollowups       = st.slider("Number of Follow-ups", 1, 10, 3)
 ProductPitched          = st.selectbox("Product Pitched", ["Basic", "Standard", "Deluxe", "Super Deluxe", "King"])
@@ -30,7 +30,7 @@ Passport                = st.selectbox("Has Passport?", ["Yes", "No"])
 PitchSatisfactionScore  = st.slider("Pitch Satisfaction Score", 1, 5, 3)
 OwnCar                  = st.selectbox("Owns a Car?", ["Yes", "No"])
 NumberOfChildrenVisiting= st.slider("Number of Children Visited", 0, 5, 1)
-Designation             = st.selectbox("Designation", ["Executive", "Manager", "AVP", "VP", "Sr. Manager"])
+Designation             = st.selectbox("Designation", ["Executive", "Manager", "AVP", "VP", "Senior Manager"])
 MonthlyIncome           = st.number_input("Monthly Income", min_value=1000.0, value=30000.0)
 
 # ----------------------------
