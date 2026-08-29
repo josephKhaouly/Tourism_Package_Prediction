@@ -17,6 +17,9 @@ DATASET_PATH = "hf://datasets/JK-141024/tourism/tourism.csv"
 tourism_df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
+# Clean the Gender column: fix the 'Fe Male' typo
+tourism_df['Gender'] = tourism_df['Gender'].replace('Fe Male', 'Female')
+
 # ----------------------------
 # Define the target variable
 # ----------------------------
